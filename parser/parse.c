@@ -6,7 +6,7 @@
 /*   By: ikarouat <ikarouat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 20:12:29 by ikarouat          #+#    #+#             */
-/*   Updated: 2025/05/27 17:12:50 by ikarouat         ###   ########.fr       */
+/*   Updated: 2025/06/02 14:41:49 by ikarouat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,19 @@
 t_command	*parse(char *line)
 {
 	t_token 	*tokens;
+	t_ast		*ast;
 	t_command	*cmds;
 
 	cmds = NULL;
-	//generate lexemes
 	tokens = tokenize(line);
 	if (!tokens)
 		return (NULL);
 	while (tokens != NULL)
 		(printf("<%s , %i>\n", tokens->value, tokens->type), tokens = tokens->next);
-	//validate conformance to grammar
-	//cmds = syntactic_analysis(tokens);
+	//Validate conformance to grammar
+	ast = ;
+	//Prepare command for execution
+	cmds = ;
 	if (!cmds)
 	{
 		free(tokens);

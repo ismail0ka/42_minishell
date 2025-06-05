@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell_parser.h                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikarouat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ikarouat <ikarouat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:15:44 by ikarouat          #+#    #+#             */
-/*   Updated: 2025/05/22 18:06:36 by ikarouat         ###   ########.fr       */
+/*   Updated: 2025/05/31 03:52:51 by ikarouat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,17 @@ t_token	*tokenize(char *line);
 /*
 	SYNTAX ANALYSIS
 */
+typedef enum e_node_type
+{
+	IS_NON_BIN,
+	IS_BIN,
+	IS_SUBSHELL,
+}
 
+typedef struct s_ast
+{
+	
+}	t_ast;
 
 /*
 	REDIRECTIONS
